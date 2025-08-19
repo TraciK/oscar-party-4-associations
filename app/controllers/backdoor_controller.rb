@@ -2,7 +2,7 @@ class BackdoorController < ApplicationController
   # To authenticate the backdoor controller, you can uncomment the line below
   # and set the `.env` environment variables ADMIN_USERNAME and ADMIN_PASSWORD.
 
-  # http_basic_authenticate_with name: ENV.fetch("ADMIN_USERNAME"), password: ENV.fetch("ADMIN_PASSWORD")
+http_basic_authenticate_with name: ENV.fetch("ADMIN_USERNAME"), password: ENV.fetch("ADMIN_PASSWORD")
 
   def index
     # Main backdoor page with create forms
